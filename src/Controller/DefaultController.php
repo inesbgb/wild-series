@@ -9,7 +9,10 @@ class DefaultController extends AbstractController
     #[Route('/', name: 'app_index')]
     public function index(): Response
     {
-        return $this->render('index.html.twig');
+
+        $website='hello webpack Encore';
+
+        return $this->render('index.html.twig',['patate'=>$website]);
     }
 }
 
